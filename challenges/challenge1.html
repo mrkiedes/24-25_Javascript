@@ -6,8 +6,21 @@
 </head>
 <body>
 <!-- Create a div tag with some text and an id named "goodbye".
-     Create a button that, when clicked, makes the text dissappear -->
+     Create a button that, when clicked, makes the text dissappear
 
+      Create a button that shows the text when hidden.
+      -->
+
+<div id="goodbye">Some text</div>
+
+<button onclick="dissappear()">Click Me</button>
+
+<script>
+    function dissappear(){
+        document.getElementById("goodbye").innerHTML = "";
+    }
+
+</script>
 
 </body>
 </html>
