@@ -14,12 +14,16 @@
 <div id="goodbye">Some text</div>
 
 <button onclick="dissappear()">Click Me</button>
+<button onclick="apear()">Click Me Too!</button>
 
 <script>
     function dissappear(){
-        document.getElementById("goodbye").innerHTML = "";
+        document.getElementById("goodbye").style.display = "none";
     }
 
+    function apear(){
+        document.getElementById("goodbye").style.display = "block";
+    }
 </script>
 
 </body>
