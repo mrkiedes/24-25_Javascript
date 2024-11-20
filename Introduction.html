@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+
+<p id="demo">Some content in there.</p>
+
+<button id="cool" onclick="myFirstFunction()" onmouseover="mySecondFunction()">
+  Click Me to Change the Text
+</button>
+<script>
+  /*
+   * Multi-Line Comment
+   */
+
+  // Single Line Comment
+  // alert("Hello World!!");
+
+  function myFirstFunction(){
+    document.getElementById('demo').innerHTML = 'Different Content';
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("cool").style.display = "none";
+  }
+
+  function mySecondFunction(){
+    document.getElementById("demo").style.fontSize = "35px";
+
+  }
+
+</script>
+
+</body>
+</html>
