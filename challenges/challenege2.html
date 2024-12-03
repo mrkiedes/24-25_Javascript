@@ -7,7 +7,7 @@
 <body>
 <!-- Add a button that when you click it, the background of the table changes to blue -->
 
-<table>
+<table id="table">
   <tr>
     <th>Company</th>
     <th>Contact</th>
@@ -44,5 +44,15 @@
     <td>Italy</td>
   </tr>
 </table>
+
+<button type="button" onclick="backgroundChange()">Click Me</button>
+
+<script>
+  function backgroundChange(){
+    document.getElementById("table").style.backgroundColor = "blue";
+  }
+
+</script>
+
 </body>
 </html>
