@@ -48,11 +48,23 @@
 <button type="button" onclick="backgroundChange()">Click Me</button>
 
 <script>
+  //document.getElementById("table").style.backgroundColor = "blue";
+
+  // Access to the HTML Element
+  table = document.getElementById("table");
+  counter = 0;
+
   function backgroundChange(){
-    document.getElementById("table").style.backgroundColor = "blue";
+    if (counter % 2 === 0){
+      table.style.backgroundColor = "red";
+    }else{
+      table.style.backgroundColor = "blue";
+    }
+    counter++;
+
   }
 
 </script>
 
 </body>
-</html>
+</html>`
